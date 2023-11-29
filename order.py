@@ -1,11 +1,11 @@
 # 対象ユーザーの注文履歴を返す処理を作成してください
-# def get_order_history(user, orders):
-#   user_orders = []
+def get_order_history(user, orders):
+  user_orders = []
 
-#   for order in orders:
-#     if order["user_id"] == user["user_id"]: 
-#       user_orders.append(order)
-#   return user_orders
+  for order in orders:
+    if order["user_id"] == user["user_id"]: 
+      user_orders.append(order)
+  return user_orders
 
 orders = [
     {
@@ -44,20 +44,21 @@ user = {'user_id': 1, 'status': 'basic'}
 
 
 
-def get_order_history(user, orders):
-  user_order = []
-  for order in orders:
-   if order["user_id"] == user["user_id"]:
-     user_order.append(order)
-     print("here",order)
-     return user_order
+# def get_order_history(user, orders):
+#   user_order = []
+#   for order in orders:
+#    if order["user_id"] == user["user_id"]:
+#      user_order.append(order)
+#      print("here",order)
+#      return user_order
 
 
 
 # for order in orders:
-#    print("order", order) #すべての情報
-#    for item in order["items"]:
-#       print(item["price"]) #priceのみの情報
+  #  print("order", order) #すべての情報
+  #  for item in order["items"]:
+  #     print("hear",item) #itemの内容
+      # print(item["price"]) #priceのみの情報
 
 # for order in orders:
 #     print(order["order_id"]) #order_id の数字のみ1　2　3　4
